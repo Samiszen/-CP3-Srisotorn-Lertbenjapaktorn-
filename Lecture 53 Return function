@@ -1,0 +1,5 @@
+def VATcal(price):
+    total = price + (price*7/100)
+    return total
+
+print(VATcal(int(input("Price: "))))
