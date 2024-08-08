@@ -1,0 +1,23 @@
+Listmenu = []
+Pricelist = []
+def showBill():
+    print("Food Bill".center(20,"="))
+    for i in range(len(Listmenu)):
+        print(Listmenu[i],Pricelist[i])
+
+while True:
+    menuName = input("Please enter your menu:")
+    if menuName.lower() == "exit":
+        break
+    else:
+        Price = int(input("Price:"))
+        Listmenu.append(menuName)
+        Pricelist.append(Price)
+        print(Listmenu)
+        print(Pricelist)
+showBill()
+
+print("Food Bill".center(20,"="))
+
+Sum = int(sum(Pricelist))
+print("Your total will be",Sum,"THB")
