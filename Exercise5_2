@@ -1,0 +1,8 @@
+#กรอกระยะทาง
+
+distance = int(input("Distance"))
+
+#กรอกเวลา
+Time = int(input("Time"))
+Output = distance/Time
+print(int(Output), "km/h")
